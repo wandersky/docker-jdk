@@ -8,7 +8,7 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
-  apt-get install -y ant vim wget python mysql-client
+  apt-get install -y ant wget python
 
 # Install Java.
 RUN \
