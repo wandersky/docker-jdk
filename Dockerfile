@@ -25,3 +25,4 @@ COPY *.jar $JAVA_HOME/jre/lib/security/
 
 # clean up
 RUN rm -rf /var/cache/oracle-jdk8-installer
+RUN rm -rf /var/lib/apt/lists/*
