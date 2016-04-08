@@ -21,7 +21,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 RUN export PATH=$JAVA_HOME/bin:$PATH
 
 # add jce policy
-COPY jce_policy/*.jar $JAVA_HOME/jre/lib/security/
+COPY *.jar $JAVA_HOME/jre/lib/security/
 
 # clean up
 RUN rm -rf /var/cache/oracle-jdk8-installer
